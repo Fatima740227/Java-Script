@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Basic Javascript</title>
+    </head>
+    <body>
+    <h2>Welcome to the World of Javascript</h2>
+    <script>
+       var name="Fatima";
+       let favouriteSubject="English";
+       let grade= 6;
+       //Output to Console
+       console.log(`My name is ${name}. I study in grade ${grade}. My favourite Subject is ${favouriteSubject}.`);
+       //Output to Webpage
+       document.write(`<p>My name is ${name}. I study in grade ${grade}. My favourite Subject is ${favouriteSubject}.</p>`);
+        //Using Object
+        let student = {
+            name: "Fatima",
+         grade: 6,
+        school: 'Roots Millenium School',
+        favouriteSubject: "English",
+        hobbies: ["reading", "drawing", "coding", "studying"]
+        };
+//Displaying object info
+  console.log(`My name is ${student.name}. I study in grade ${student.grade}. My favourite subject is ${student.favouriteSubject}. I go to ${student.school} and my hobbies are ${student.hobbies.join(", ")}.`);
+    document.write(`<p>My name is ${student.name}. I study in grade ${student.grade}. My favourite subject is ${student.favouriteSubject}. I go to ${student.school} and my hobbies are ${student.hobbies.join(", ")}.</p>`);
+    </script>
+    </body>
+</html>

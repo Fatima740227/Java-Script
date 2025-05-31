@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Website</title>
+    <style>
+body {
+    text-align: center;
+}
+
+nav{
+    background-color: hotpink;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float:left;
+}
+li a{
+    display:block;
+}
+li a:hover{
+    background-color: plum;
+}
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="portfolio website.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+        <h2>Intresting Facts about Tigers & Lions</h2>
+        <img src="tiger.jpg" width="300px">
+        <br>
+        <button onclick="tiger()">Read More!</button>
+        <p id="tiger-info"></p><br><br>
+        <img src="lion.jpeg" width="300px">
+        <br>
+        <button onclick="lion()">Read More!</button>
+        <p id="lion-info"></p><br><br>
+        
+        <script>
+            function tiger() {
+                document.getElementById("tiger-info").innerHTML="The tiger is a large cat and a member of the genus Panthera native to Asia"
+            }
+            function lion() {
+                    document.getElementById("lion-info").innerHTML="The lion is a large cat of the genus Panthera, native to Sub -Saharan Africa and India."
+                }
+        </script>
+    </body>
+</html>

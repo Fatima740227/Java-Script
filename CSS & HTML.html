@@ -11,7 +11,7 @@ padding: 20px;
 width: 200px;
 margin: auto;
             }
-            .rectangles {
+            .rectangle {
                 border: 1px solid black;
                 width: 200px;
                 height: 200px;
@@ -57,7 +57,7 @@ margin: auto;
     div.style.background = randomColor;
  }
  let currentSize= 200;
- let broderVisible= true;
+ let borderVisible= true;
     function increaseSize() {
         currentSize += 20;
         div.style.width = currentSize + "px";
@@ -73,8 +73,11 @@ margin: auto;
    function toggleBorder() {
         if (borderVisible) {
             div.style.border = "none";
-        }else
+        }
+        else{
             div.style.border = "2px solid black";
+        }
+        borderVisible = !borderVisible;
         }
     function reset() {
         currentSize =200;
@@ -84,7 +87,7 @@ div.style.width= "200px";
         div.style.height = "200px";
         div.style.border= "2px solid black";
 div.style.borderRadius="0";
-div.style.background="none"
+div.style.background="";
     }
     </script>
     </body>

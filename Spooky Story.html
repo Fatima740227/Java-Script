@@ -24,11 +24,13 @@
         <div class="textEntry">Type your name here,if you dare:  <input type="text" id="name"></div>
         <button onclick="typeAndScream()">PLease,Please Don't Click Me</button>
         <button onclick="finishTheStory()">Tell Me What Happened!</button>
+        <!--Add audio element-->
+        <audio id="screamAudio" src="spooky-dark-pad-35258.mp3"></audio>
         <script>
             function typeAndScream() {
-                //Uncomment the commented codes to use the audio
-                //document.getElementById(.audio)play();
                 var personName = document.getElementById("name").value;
+                var audio = document.getElementById("screamAudio");
+                audio.play(); //Play the scream audio
                 alert ("I told you not to do that " + personName);
             }
             function goDark() {

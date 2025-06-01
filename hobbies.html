@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Hobbies</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: paleturquoise;
+            color: antiquewhite;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: rgb(105, 208, 255);
+            padding: 15px, 0
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgb(53, 174, 255);
+        }
+
+        h2 {
+            margin: 30px 0 20px;
+            color: white;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="about.html"> Home </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    <h2>My Hobbies!</h2>
+    <img src="coding.webp" width="300px">
+    <br>
+    <button onclick="coding()">Read More!</button>
+    <p id="coding-info"></p><br><br>
+    <img src="drawing-.webp" width="300px">
+    <br>
+    <button onclick="drawing()">Read More!</button>
+    <p id="drawing-info"></p><br><br>
+    <img src="cooking.jpg" width="300px">
+    <br>
+    <button onclick="cooking()">Read More!</button>
+    <p id="cooking-info"></p><br><br>
+    
+
+    <script>
+        function coding() {
+            document.getElementById("coding-info").innerHTML = "I like to do coding. I have been doing it since 1 year. It's very nice and intresting to learn."
+        }
+        function drawing() {
+            document.getElementById("drawing-info").innerHTML = "I love to draw,paint and sketch. I hav a lot of art supplies to work with."
+        }
+        function cooking() {
+                document.getElementById("cooking-info").innerHTML = "I like to do cooking.I know how to make chinese food,pasta,butter chicken,mexican omelettes,spaghetti,lasagna,coffee and crunchwraps."
+            }
+    </script>
+</body>
+
+</html>
